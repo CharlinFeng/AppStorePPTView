@@ -15,6 +15,8 @@ class AppStorePPTCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
+        layer.borderWidth = 2
+        layer.borderColor = UIColor.redColor().CGColor
     }
 
 }

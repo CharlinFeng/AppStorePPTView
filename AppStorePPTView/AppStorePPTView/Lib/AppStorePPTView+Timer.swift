@@ -14,6 +14,7 @@ extension AppStorePPTView {
     func timerOn(){
         
         timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(run), userInfo: nil, repeats: true)
+        NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
     }
     
     func timerOff(){

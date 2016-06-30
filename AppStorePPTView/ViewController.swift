@@ -25,6 +25,8 @@ class ViewController: UIViewController {
             v.image = UIImage(named: self.imgs[i])
         }
         
+        automaticallyAdjustsScrollViewInsets = false
+        
     }
     
     

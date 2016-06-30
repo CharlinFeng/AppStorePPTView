@@ -31,6 +31,8 @@ class AppStorePPTViewLayout: UICollectionViewFlowLayout {
         
         let size = collectionView?.bounds.size ?? CGSizeZero
         
+        print("collectionView?.bounds.size:\(collectionView?.bounds.size)")
+        
         itemSize = CGSizeMake(size.width * p, size.height)
         
         sectionInset = UIEdgeInsetsMake(0, margin, 0, 0)

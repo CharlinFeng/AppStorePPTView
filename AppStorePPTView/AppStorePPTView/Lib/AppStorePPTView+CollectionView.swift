@@ -22,7 +22,7 @@ extension AppStorePPTView: UICollectionViewDataSource, UICollectionViewDelegate 
         collectionView.delegate = self
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.backgroundColor = UIColor.whiteColor()
-        
+        collectionView.layer.borderWidth = 4
         addSubview(collectionView)
     }
     
@@ -98,7 +98,7 @@ extension AppStorePPTView: UICollectionViewDataSource, UICollectionViewDelegate 
     }
     
     func check(){
-        if centerIndexPathItem % num == 0 {scrollToMiddle(); print("滚动到中间")}
+        if centerIndexPathItem % num == 0 {scrollToMiddle();}
     }
     
     
